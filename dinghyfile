@@ -1,6 +1,21 @@
 {
   "application": "dinghytest",
   "pipelines": [
-    
+    {
+      "application": "dinghytest",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "name": "made by dinghy",
+      "stages": [
+        {
+          "name": "Wait",
+          "refId": "1",
+          "requisiteStageRefIds": [],
+          "type": "wait",
+          "waitTime": 500
+        }
+      ],
+      "triggers": []
+    }
   ]
 }
